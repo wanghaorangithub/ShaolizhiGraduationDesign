@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ShaolizhiGraduationDesign</string>
+    <string name="title_home">闲鱼</string>
+    <string name="title_dashboard">鱼塘</string>
+    <string name="title_notifications">消息</string>
+    <string name="personal_information">我的</string>
+</resources>
