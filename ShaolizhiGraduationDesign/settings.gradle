@@ -1,1 +1,1 @@
-include ':app', ':image_slider'
+include ':app', ':image_slider', ':pull_to_refresh_phoenix'

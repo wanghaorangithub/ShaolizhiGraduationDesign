@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <TextView
@@ -15,44 +15,66 @@
         android:textSize="17sp"
         android:typeface="monospace" />
 
-    <LinearLayout
+    <com.yalantis.phoenix.PullToRefreshView
+        android:id="@+id/pull_to_refresh"
         android:layout_width="match_parent"
-        android:layout_height="41dp"
-        android:background="#f1f1f3">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/shape_of_edit_text"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/shape_of_edit_text"
-                android:drawablePadding="3dp"
-                android:drawableStart="@drawable/ic_search"
-                android:gravity="center_vertical|center_horizontal"
-                android:hint="请输入鱼塘关键字"
-                android:textSize="13.5sp" />
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:background="#f1f1f3">
 
-    <com.daimajia.slider.library.SliderLayout
-        android:id="@+id/slider"
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        custom:auto_cycle="true"
-        custom:indicator_visibility="visible"
-        custom:pager_animation="Accordion"
-        custom:pager_animation_span="1100" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/shape_of_edit_text"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/shape_of_edit_text"
+                            android:drawablePadding="3dp"
+                            android:drawableStart="@drawable/ic_search"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:hint="请输入鱼塘关键字"
+                            android:textSize="13.5sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    custom:auto_cycle="true"
+                    custom:indicator_visibility="visible"
+                    custom:pager_animation="Accordion"
+                    custom:pager_animation_span="1100" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </com.yalantis.phoenix.PullToRefreshView>
 
 
 </LinearLayout>

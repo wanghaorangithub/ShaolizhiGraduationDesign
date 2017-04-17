@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/ShaolizhiGraduationDesign.iml" filepath="$PROJECT_DIR$/ShaolizhiGraduationDesign.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/image_slider/image_slider.iml" filepath="$PROJECT_DIR$/image_slider/image_slider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pull_to_refresh_phoenix/pull_to_refresh_phoenix.iml" filepath="$PROJECT_DIR$/pull_to_refresh_phoenix/pull_to_refresh_phoenix.iml" />
     </modules>
   </component>
 </project>

@@ -12,6 +12,7 @@ import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
+import com.yalantis.phoenix.PullToRefreshView;
 
 import java.util.HashMap;
 
@@ -25,11 +26,30 @@ import shaolizhi.shaolizhigraduationdesign.my_tools.AlwaysInvisibleAnimation;
 public class BFragment extends Fragment implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
     SliderLayout sliderLayout;
     Activity activity;
+    PullToRefreshView pullToRefreshView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup viewGroup, Bundle bundle) {
         View rootView = inflater.inflate(R.layout.b_fragment, viewGroup, false);
         sliderLayout = (SliderLayout) rootView.findViewById(R.id.slider);
+        pullToRefreshView = (PullToRefreshView)rootView.findViewById(R.id.pull_to_refresh);
+        pullToRefreshView.setOnRefreshListener(new PullToRefreshView.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                /**
+                 * 这是一个延迟执行的函数，在REFRESH_DELAY(单位：毫秒)时间后，让PullToRefreshView停止转动————
+                 * 通过setRefreshing(false)来实现
+                 */
+                pullToRefreshView.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        pullToRefreshView.setRefreshing(false);
+                    }
+                }, 2000);
+            }
+        });
+
+
         /**
          * 新建HashMap的实例file_maps，用于存放需要在轮播组件上展示的四张图片的「名字-本地R资源」键值对
          * 我认为file_maps与上文所述的url_maps遥相呼应，对应着本地资源与网络资源，是两种不同的加载方式
