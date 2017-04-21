@@ -8,12 +8,12 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
+import shaolizhi.shaolizhigraduationdesign.R;
 import shaolizhi.shaolizhigraduationdesign.my_fragment.AFragment;
 import shaolizhi.shaolizhigraduationdesign.my_fragment.BFragment;
-import shaolizhi.shaolizhigraduationdesign.my_tools.BottomNavigationViewHelper;
 import shaolizhi.shaolizhigraduationdesign.my_fragment.CFragment;
 import shaolizhi.shaolizhigraduationdesign.my_fragment.DFragment;
-import shaolizhi.shaolizhigraduationdesign.R;
+import shaolizhi.shaolizhigraduationdesign.my_tools.BottomNavigationViewHelper;
 
 public class MainActivity extends AppCompatActivity {
     FragmentManager fragmentManager;
@@ -88,5 +88,6 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.content, dFragment);
         fragmentTransaction.commit();
     }
+    
 
 }

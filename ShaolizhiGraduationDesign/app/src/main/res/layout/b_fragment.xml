@@ -69,7 +69,13 @@
                     custom:pager_animation="Accordion"
                     custom:pager_animation_span="1100" />
 
+               <FrameLayout
+                   android:id="@+id/recycler_frame_layout"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
             </LinearLayout>
+
 
 
         </ScrollView>

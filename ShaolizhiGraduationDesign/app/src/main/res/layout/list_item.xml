@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/user_avatar_imageview"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/slz_zheng" />
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="2dp"
+                android:layout_toEndOf="@+id/user_avatar_imageview"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_name_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="start|bottom"
+                    android:paddingBottom="1dp"
+                    android:text="邵励治"
+                    android:textColor="#2c2c2c"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/date_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="2017年4月18日"
+                    android:textColor="#737373"
+                    android:paddingTop="4dp"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/price_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:drawableLeft="@drawable/ic_price"
+                android:gravity="center"
+                android:text="899"
+                android:textColor="#2c2c2c"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider_item"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            custom:auto_cycle="false"
+            custom:indicator_visibility="visible"
+            custom:pager_animation="Accordion"
+            custom:pager_animation_span="1100" />
+
+
+        <TextView
+            android:id="@+id/description_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/publicity_language"
+            android:textColor="#2c2c2c"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/collection_button"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#d81e06"
+                android:gravity="center"
+                android:text="LOVE IT"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+    </LinearLayout>
+</FrameLayout>
