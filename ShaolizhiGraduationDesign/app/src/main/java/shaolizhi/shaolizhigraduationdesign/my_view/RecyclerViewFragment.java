@@ -1,4 +1,4 @@
-package shaolizhi.shaolizhigraduationdesign.my_fragment;
+package shaolizhi.shaolizhigraduationdesign.my_view;
 
 import android.content.Context;
 import android.os.Bundle;

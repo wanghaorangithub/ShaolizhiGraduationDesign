@@ -20,6 +20,7 @@ import java.util.HashMap;
 
 import shaolizhi.shaolizhigraduationdesign.R;
 import shaolizhi.shaolizhigraduationdesign.my_tools.AlwaysInvisibleAnimation;
+import shaolizhi.shaolizhigraduationdesign.my_view.RecyclerViewFragment;
 
 /**
  * 邵励治，中国，北京，2017年4月17日创建
