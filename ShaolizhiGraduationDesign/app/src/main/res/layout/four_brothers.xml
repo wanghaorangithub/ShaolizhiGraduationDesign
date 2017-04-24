@@ -8,6 +8,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:background="#ffffff"
         android:orientation="vertical">
 
         <TextView
@@ -16,7 +17,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="bottom|center_horizontal"
-            android:text="闲鱼精选"
+            android:text="行家精选"
             android:textColor="#000000"
             android:textSize="14sp"
             android:textStyle="bold"
@@ -29,7 +30,7 @@
             android:layout_weight="1"
             android:gravity="top|center_horizontal"
             android:paddingTop="1dp"
-            android:text="这里有好东西"
+            android:text="帮您挑好乐器"
             android:textSize="12sp"
             android:typeface="monospace" />
 
@@ -44,7 +45,7 @@
                 android:layout_width="35dp"
                 android:layout_height="50dp"
                 android:layout_gravity="top"
-                android:background="#000000" />
+                android:background="@drawable/sax" />
         </LinearLayout>
     </LinearLayout>
 
@@ -52,6 +53,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:background="#ffffff"
         android:orientation="vertical">
 
         <TextView
@@ -60,7 +62,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="bottom|center_horizontal"
-            android:text="拍卖"
+            android:text="正品店铺"
             android:textColor="#000000"
             android:textSize="14sp"
             android:textStyle="bold"
@@ -73,7 +75,7 @@
             android:layout_weight="1"
             android:gravity="top|center_horizontal"
             android:paddingTop="1dp"
-            android:text="一元起拍捡漏"
+            android:text="大品牌有保障"
             android:textSize="12sp"
             android:typeface="monospace" />
 
@@ -88,7 +90,7 @@
                 android:layout_width="35dp"
                 android:layout_height="50dp"
                 android:layout_gravity="top"
-                android:background="#000000" />
+                android:background="@drawable/yamaha" />
         </LinearLayout>
     </LinearLayout>
 
@@ -96,6 +98,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:background="#ffffff"
         android:orientation="vertical">
 
         <TextView
@@ -104,7 +107,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="bottom|center_horizontal"
-            android:text="同城"
+            android:text="乐器周边"
             android:textColor="#000000"
             android:textSize="14sp"
             android:textStyle="bold"
@@ -117,7 +120,7 @@
             android:layout_weight="1"
             android:gravity="top|center_horizontal"
             android:paddingTop="1dp"
-            android:text="选闲置更靠谱"
+            android:text="精品乐谱任选"
             android:textSize="12sp"
             android:typeface="monospace" />
 
@@ -132,7 +135,7 @@
                 android:layout_width="35dp"
                 android:layout_height="50dp"
                 android:layout_gravity="top"
-                android:background="#000000" />
+                android:background="@drawable/sax_puzi" />
         </LinearLayout>
 
     </LinearLayout>
@@ -141,6 +144,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:background="#ffffff"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -150,7 +154,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="bottom|center_horizontal"
-            android:text="我要租房"
+            android:text="我要维修"
             android:textColor="#000000"
             android:textSize="14sp"
             android:textStyle="bold"
@@ -163,7 +167,7 @@
             android:layout_weight="1"
             android:gravity="top|center_horizontal"
             android:paddingTop="1dp"
-            android:text="三分钟租到房"
+            android:text="老师傅修乐器"
             android:textSize="12sp"
             android:typeface="monospace" />
 
@@ -178,7 +182,7 @@
                 android:layout_width="35dp"
                 android:layout_height="50dp"
                 android:layout_gravity="top"
-                android:background="#000000" />
+                android:background="@drawable/fix" />
         </LinearLayout>
     </LinearLayout>
 

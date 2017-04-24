@@ -1,5 +1,6 @@
 package shaolizhi.shaolizhigraduationdesign.my_activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     BFragment bFragment;
     CFragment cFragment;
     DFragment dFragment;
+    Boolean isLogin;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -38,7 +40,10 @@ public class MainActivity extends AppCompatActivity {
                     switchToC();
                     return true;
                 case R.id.navigation_personal_information:
-                    switchToD();
+                    if (!isLogin)
+                        switchToWelcome();
+                    else
+                        switchToD();
                     return true;
             }
             return false;
@@ -58,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         cFragment = new CFragment();
         dFragment = new DFragment();
         fragmentManager = getSupportFragmentManager();
+        isLogin = false;
         initializeFragment();
     }
 
@@ -89,5 +95,9 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.commit();
     }
 
+    void switchToWelcome() {
+        Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
+        startActivity(intent);
+    }
 
 }

@@ -9,6 +9,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="#efefef" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="56dp"
@@ -51,9 +56,9 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="start"
+                    android:paddingTop="4dp"
                     android:text="2017年4月18日"
                     android:textColor="#737373"
-                    android:paddingTop="4dp"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -110,6 +115,6 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="5dp"/>
+            android:layout_height="5dp" />
     </LinearLayout>
 </FrameLayout>

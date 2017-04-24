@@ -8,6 +8,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:background="#ffffff"
         android:orientation="vertical">
 
         <LinearLayout
@@ -29,7 +30,7 @@
                     android:gravity="start|bottom"
                     android:paddingBottom="3dp"
                     android:paddingLeft="14dp"
-                    android:text="我的穿衣有态度"
+                    android:text="摇滚神器"
                     android:textColor="#000000"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -41,7 +42,7 @@
                     android:gravity="top|start"
                     android:paddingLeft="14dp"
                     android:paddingTop="3dp"
-                    android:text="2661个新宝贝入塘"
+                    android:text="有了他们，你可能会成为AC/DC"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -54,15 +55,16 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="#000000" />
+                    android:background="@drawable/fender_guitar" />
             </LinearLayout>
 
         </LinearLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#efefef"
-            />
+            android:background="#efefef" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -93,7 +95,7 @@
                     android:gravity="top|start"
                     android:paddingLeft="14dp"
                     android:paddingTop="3dp"
-                    android:text="1805个新宝贝入塘"
+                    android:text="世界上最好的乐器们"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -106,14 +108,15 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="#000000" />
+                    android:background="@drawable/gangqin" />
             </LinearLayout>
         </LinearLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#efefef"
-            />
+            android:background="#efefef" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -132,7 +135,7 @@
                     android:gravity="start|bottom"
                     android:paddingBottom="3dp"
                     android:paddingLeft="14dp"
-                    android:text="电脑发烧友之家"
+                    android:text="音乐馆"
                     android:textColor="#000000"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -144,7 +147,7 @@
                     android:gravity="top|start"
                     android:paddingLeft="14dp"
                     android:paddingTop="3dp"
-                    android:text="285个新宝贝入塘"
+                    android:text="我们在这里交流演奏心得，分享乐谱"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -157,7 +160,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="#000000" />
+                    android:background="@drawable/guojiadajuyuan" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -165,13 +168,13 @@
     <View
         android:layout_width="1dp"
         android:layout_height="match_parent"
-        android:background="#efefef"
-        />
+        android:background="#efefef" />
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:background="#ffffff"
         android:orientation="vertical">
 
         <LinearLayout
@@ -192,7 +195,7 @@
                     android:gravity="start|bottom"
                     android:paddingBottom="3dp"
                     android:paddingLeft="14dp"
-                    android:text="【技能】会外语"
+                    android:text="初学者选购"
                     android:textColor="#000000"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -204,7 +207,7 @@
                     android:gravity="top|start"
                     android:paddingLeft="14dp"
                     android:paddingTop="3dp"
-                    android:text="外教一对一，英语轻松学"
+                    android:text="给孩子买一把能用20年的乐器"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -217,14 +220,15 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="#000000" />
+                    android:background="@drawable/childduzou" />
             </LinearLayout>
         </LinearLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#efefef"
-            />
+            android:background="#efefef" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -243,7 +247,7 @@
                     android:gravity="start|bottom"
                     android:paddingBottom="3dp"
                     android:paddingLeft="14dp"
-                    android:text="实拍穿搭"
+                    android:text="【同城】组乐队"
                     android:textColor="#000000"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -255,7 +259,7 @@
                     android:gravity="top|start"
                     android:paddingLeft="14dp"
                     android:paddingTop="3dp"
-                    android:text="今日实拍已上新"
+                    android:text="每个人都应该有自己的乐队"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -268,14 +272,15 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="#000000" />
+                    android:background="@drawable/yuedui" />
             </LinearLayout>
         </LinearLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#efefef"
-            />
+            android:background="#efefef" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -294,7 +299,7 @@
                     android:gravity="start|bottom"
                     android:paddingBottom="3dp"
                     android:paddingLeft="14dp"
-                    android:text="距结束5小时"
+                    android:text="Story音乐节"
                     android:textColor="#000000"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -306,7 +311,7 @@
                     android:gravity="top|start"
                     android:paddingLeft="14dp"
                     android:paddingTop="3dp"
-                    android:text="北方官塘踏青时节西画二专场"
+                    android:text="全民参演，一个属于我们每个人的音乐节"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -319,7 +324,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="#000000" />
+                    android:background="@drawable/yinyuejie" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

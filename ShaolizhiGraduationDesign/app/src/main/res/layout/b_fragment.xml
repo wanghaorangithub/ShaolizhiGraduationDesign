@@ -21,10 +21,6 @@
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,25 +56,18 @@
 
                 </LinearLayout>
 
-                <com.daimajia.slider.library.SliderLayout
-                    android:id="@+id/slider"
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
                     android:layout_width="match_parent"
-                    android:layout_height="110dp"
-                    custom:auto_cycle="true"
-                    custom:indicator_visibility="visible"
-                    custom:pager_animation="Accordion"
-                    custom:pager_animation_span="1100" />
-
-               <FrameLayout
-                   android:id="@+id/recycler_frame_layout"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"/>
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:fadingEdge="none" />
 
             </LinearLayout>
 
 
 
-        </ScrollView>
 
     </com.yalantis.phoenix.PullToRefreshView>
 
