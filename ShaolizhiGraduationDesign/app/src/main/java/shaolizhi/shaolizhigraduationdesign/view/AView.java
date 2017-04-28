@@ -31,6 +31,16 @@ public class AView extends Fragment implements AViewInterface {
     View rootView;
 
     @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup viewGroup, Bundle bundle) {
+        rootView = inflater.inflate(R.layout.a_fragment, viewGroup, false);
+
+        aPresenter = new APresenter(this);
+        aPresenter.loadUserInterface();
+
+        return rootView;
+    }
+
+    @Override
     public void loadRefreshLayout() {
         swipeRefreshLayout = (SwipeRefreshLayout) rootView.findViewById(R.id.swipe_refresh_layout);
         swipeRefreshLayout.setOnRefreshListener(aPresenter);
@@ -67,15 +77,6 @@ public class AView extends Fragment implements AViewInterface {
         sliderLayout.setCustomAnimation(new AlwaysInvisibleAnimation());
         sliderLayout.setDuration(2);
         sliderLayout.addOnPageChangeListener(aPresenter);
-    }
-
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup viewGroup, Bundle bundle) {
-        rootView = inflater.inflate(R.layout.a_fragment, viewGroup, false);
-        aPresenter = new APresenter(this);
-        aPresenter.loadUserInterface();
-        return rootView;
     }
 
     @Override
