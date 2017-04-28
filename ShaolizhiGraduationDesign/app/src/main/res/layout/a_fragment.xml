@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <shaolizhi.shaolizhigraduationdesign.my_view.TopMenu
+    <shaolizhi.shaolizhigraduationdesign.widget.TopMenu
         android:layout_width="match_parent"
         android:layout_height="52dp" />
 
@@ -34,7 +34,7 @@
                     custom:pager_animation="Accordion"
                     custom:pager_animation_span="1100" />
 
-                <shaolizhi.shaolizhigraduationdesign.my_view.FourBrothers
+                <shaolizhi.shaolizhigraduationdesign.widget.FourBrothers
                     android:layout_width="match_parent"
                     android:layout_height="110dp" />
 
@@ -43,7 +43,7 @@
                     android:layout_height="12dp"
                     android:background="#efefef" />
 
-                <shaolizhi.shaolizhigraduationdesign.my_view.SixBrothers
+                <shaolizhi.shaolizhigraduationdesign.widget.SixBrothers
                     android:layout_width="match_parent"
                     android:layout_height="300dp" />
 

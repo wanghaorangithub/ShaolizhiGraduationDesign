@@ -1,4 +1,4 @@
-package shaolizhi.shaolizhigraduationdesign.my_fragment;
+package shaolizhi.shaolizhigraduationdesign.view;
 
 
 import android.app.Activity;
@@ -21,14 +21,14 @@ import com.daimajia.slider.library.Tricks.ViewPagerEx;
 import java.util.HashMap;
 
 import shaolizhi.shaolizhigraduationdesign.R;
-import shaolizhi.shaolizhigraduationdesign.my_tools.AlwaysInvisibleAnimation;
+import shaolizhi.shaolizhigraduationdesign.plugin.AlwaysInvisibleAnimation;
 
 /**
  * Created by shaol on 2017/4/7.
  *
  */
 
-public class AFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener, BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
+public class AView extends Fragment implements SwipeRefreshLayout.OnRefreshListener, BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
     SwipeRefreshLayout swipeRefreshLayout;
     Activity activity;
     /**

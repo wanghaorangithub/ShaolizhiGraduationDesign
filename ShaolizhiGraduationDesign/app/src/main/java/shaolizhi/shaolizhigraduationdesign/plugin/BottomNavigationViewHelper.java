@@ -1,4 +1,4 @@
-package shaolizhi.shaolizhigraduationdesign.my_tools;
+package shaolizhi.shaolizhigraduationdesign.plugin;
 
 import android.support.design.internal.BottomNavigationItemView;
 import android.support.design.internal.BottomNavigationMenuView;

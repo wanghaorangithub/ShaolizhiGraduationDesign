@@ -1,15 +1,15 @@
-package shaolizhi.shaolizhigraduationdesign.my_activity;
+package shaolizhi.shaolizhigraduationdesign.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import shaolizhi.shaolizhigraduationdesign.R;
 
-public class SearchActivity extends AppCompatActivity {
+public class WelcomeView extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_search);
+        setContentView(R.layout.activity_welcome);
     }
 }

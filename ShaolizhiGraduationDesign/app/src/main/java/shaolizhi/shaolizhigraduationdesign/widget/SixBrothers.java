@@ -1,4 +1,4 @@
-package shaolizhi.shaolizhigraduationdesign.my_view;
+package shaolizhi.shaolizhigraduationdesign.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;

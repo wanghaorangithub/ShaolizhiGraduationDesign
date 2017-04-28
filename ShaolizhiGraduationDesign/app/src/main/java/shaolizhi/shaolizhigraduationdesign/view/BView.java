@@ -1,4 +1,4 @@
-package shaolizhi.shaolizhigraduationdesign.my_fragment;
+package shaolizhi.shaolizhigraduationdesign.view;
 
 import android.app.Activity;
 import android.content.Context;
@@ -25,13 +25,13 @@ import java.util.List;
 import java.util.Map;
 
 import shaolizhi.shaolizhigraduationdesign.R;
-import shaolizhi.shaolizhigraduationdesign.my_tools.AlwaysInvisibleAnimation;
+import shaolizhi.shaolizhigraduationdesign.plugin.AlwaysInvisibleAnimation;
 
 /**
  * 邵励治，中国，北京，2017年4月17日创建
  */
 
-public class BFragment extends Fragment {
+public class BView extends Fragment {
 
     Activity activity;
     PullToRefreshView pullToRefreshView;
