@@ -5,6 +5,9 @@ import android.support.design.widget.BottomNavigationView;
 import android.view.MenuItem;
 
 import shaolizhi.shaolizhigraduationdesign.R;
+import shaolizhi.shaolizhigraduationdesign.bean.UserBean;
+import shaolizhi.shaolizhigraduationdesign.model.MainModel;
+import shaolizhi.shaolizhigraduationdesign.model.MainModelInterface;
 import shaolizhi.shaolizhigraduationdesign.view.MainViewInterface;
 
 /**
@@ -13,11 +16,11 @@ import shaolizhi.shaolizhigraduationdesign.view.MainViewInterface;
 
 public class MainPresenter implements BottomNavigationView.OnNavigationItemSelectedListener {
     private MainViewInterface mainView;
-    private Boolean isLogin;
+    private MainModelInterface mainModel;
 
     public MainPresenter(MainViewInterface mainView) {
         this.mainView = mainView;
-        isLogin = false;
+        mainModel = new MainModel();
     }
 
     public void loadUserInterface() {
@@ -38,7 +41,8 @@ public class MainPresenter implements BottomNavigationView.OnNavigationItemSelec
                 mainView.loadViewC();
                 return true;
             case R.id.navigation_personal_information:
-                if (!isLogin)
+                UserBean userBean = mainModel.getUserBeanFromServer();
+                if (!userBean.getLoginStatus())
                     mainView.loadViewWelcome();
                 else
                     mainView.loadViewD();
