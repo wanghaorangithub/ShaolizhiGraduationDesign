@@ -5,7 +5,7 @@ import android.view.View;
 import com.daimajia.slider.library.Animations.BaseAnimationInterface;
 
 /**
- * Created by shaol on 2017/4/11.
+ * Created by 邵励治 on 2017/4/11.
  * 这是让轮播控件底下的提示信息永远不出来的类
  */
 

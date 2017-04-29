@@ -7,7 +7,7 @@ import android.support.design.widget.BottomNavigationView;
 import java.lang.reflect.Field;
 
 /**
- * Created by shaol on 2017/4/7.
+ * Created by 邵励治 on 2017/4/7.
  * 引用自文章《BottomNavigationView关闭shiftingMode》
  */
 
