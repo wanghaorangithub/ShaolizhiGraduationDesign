@@ -9,7 +9,7 @@ import com.daimajia.slider.library.Animations.BaseAnimationInterface;
  * 这是让轮播控件底下的提示信息永远不出来的类
  */
 
-public class AlwaysInvisibleAnimation implements BaseAnimationInterface {
+public class SliderLayout_AlwaysInvisibleAnimation implements BaseAnimationInterface {
     @Override
     public void onPrepareCurrentItemLeaveScreen(View current) {
         View descriptionLayout = current.findViewById(com.daimajia.slider.library.R.id.description_layout);

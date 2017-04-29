@@ -24,7 +24,7 @@ public class APresenter implements SwipeRefreshLayout.OnRefreshListener, BaseSli
     }
 
     public void loadUserInterface() {
-        ABean aViewData = aModel.getSliderDataFromDatabase();
+        ABean aViewData = aModel.getABeanFromServer();
         aView.loadRefreshLayout();
         aView.loadSliderLayout(aViewData.getSliderLayoutData());
     }

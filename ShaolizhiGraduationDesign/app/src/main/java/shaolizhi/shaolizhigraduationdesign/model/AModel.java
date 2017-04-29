@@ -11,7 +11,7 @@ import shaolizhi.shaolizhigraduationdesign.bean.ABean;
 
 public class AModel implements AModelInterface {
     @Override
-    public ABean getSliderDataFromDatabase() {
+    public ABean getABeanFromServer() {
         ABean aBean = new ABean();
         HashMap<String, Integer> hashMap = new HashMap<>();
         hashMap.put("1", R.drawable.main_1);

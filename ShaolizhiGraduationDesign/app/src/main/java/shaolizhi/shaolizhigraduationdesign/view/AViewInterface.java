@@ -7,9 +7,11 @@ import java.util.HashMap;
  */
 
 public interface AViewInterface {
+
     void loadRefreshLayout();
 
     void stopRefreshing();
 
     void loadSliderLayout(HashMap<String, Integer> hashMap);
+
 }

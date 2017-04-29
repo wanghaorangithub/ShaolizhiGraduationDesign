@@ -16,7 +16,7 @@ import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import java.util.HashMap;
 
 import shaolizhi.shaolizhigraduationdesign.R;
-import shaolizhi.shaolizhigraduationdesign.plugin.AlwaysInvisibleAnimation;
+import shaolizhi.shaolizhigraduationdesign.plugin.SliderLayout_AlwaysInvisibleAnimation;
 import shaolizhi.shaolizhigraduationdesign.presenter.APresenter;
 
 /**
@@ -24,6 +24,7 @@ import shaolizhi.shaolizhigraduationdesign.presenter.APresenter;
  */
 
 public class AView extends Fragment implements AViewInterface {
+
     SwipeRefreshLayout swipeRefreshLayout;
     APresenter aPresenter;
     Context context;
@@ -74,7 +75,7 @@ public class AView extends Fragment implements AViewInterface {
 
         sliderLayout.setPresetTransformer(SliderLayout.Transformer.Default);
         sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
-        sliderLayout.setCustomAnimation(new AlwaysInvisibleAnimation());
+        sliderLayout.setCustomAnimation(new SliderLayout_AlwaysInvisibleAnimation());
         sliderLayout.setDuration(2);
         sliderLayout.addOnPageChangeListener(aPresenter);
     }

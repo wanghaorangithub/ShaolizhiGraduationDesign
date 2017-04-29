@@ -7,5 +7,5 @@ import shaolizhi.shaolizhigraduationdesign.bean.ABean;
  */
 
 public interface AModelInterface {
-    ABean getSliderDataFromDatabase();
+    ABean getABeanFromServer();
 }
