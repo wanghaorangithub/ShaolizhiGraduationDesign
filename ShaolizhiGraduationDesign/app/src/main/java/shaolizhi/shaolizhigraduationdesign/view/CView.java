@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import shaolizhi.shaolizhigraduationdesign.R;
 
 /**
- * Created by shaol on 2017/4/7.
+ * 由邵励治于2017/4/7创造.
  */
 
 public class CView extends Fragment{

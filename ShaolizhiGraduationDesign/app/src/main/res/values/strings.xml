@@ -80,4 +80,7 @@
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="instrument">乐器</string>
     <string name="PleaseInputWantYouWant">请输入您想要的乐器</string>
+    <string name="login">登陆</string>
+    <string name="register">注册</string>
+    <string name="skip_login">跳过登陆</string>
 </resources>

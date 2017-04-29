@@ -9,19 +9,13 @@ import android.view.ViewGroup;
 import shaolizhi.shaolizhigraduationdesign.R;
 
 /**
- * Created by shaol on 2017/4/7.
+ * 由邵励治于2017/4/7创造.
  */
 
 public class DView extends Fragment {
-
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup viewGroup, Bundle bundle) {
         View rootView = inflater.inflate(R.layout.d_fragment, viewGroup, false);
-
-
-
         return rootView;
     }
 }
