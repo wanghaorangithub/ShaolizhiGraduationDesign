@@ -49,7 +49,12 @@ public class AView extends Fragment implements AViewInterface {
 
     @Override
     public void stopRefreshing() {
-        swipeRefreshLayout.setRefreshing(false);
+        swipeRefreshLayout.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                swipeRefreshLayout.setRefreshing(false);
+            }
+        }, 1000);
     }
 
     @Override
