@@ -40,7 +40,8 @@ public class MainViewView extends AppCompatActivity implements MainViewInterface
 
     @Override
     public void loadViewA() {
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        FragmentTransaction fragmentTransaction =
+                fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.content, aView);
         fragmentTransaction.commit();
     }
