@@ -15,7 +15,7 @@ import shaolizhi.shaolizhigraduationdesign.R;
 public class DView extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup viewGroup, Bundle bundle) {
-        View rootView = inflater.inflate(R.layout.d_fragment, viewGroup, false);
+        View rootView = inflater.inflate(R.layout.d_view, viewGroup, false);
         return rootView;
     }
 }

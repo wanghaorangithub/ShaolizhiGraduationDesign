@@ -71,7 +71,8 @@ public class BPresenter extends RecyclerView.Adapter<BPresenter.DreamHolder> imp
         return dataForRecycler.size();
     }
 
-    class DreamHolder extends android.support.v7.widget.RecyclerView.ViewHolder implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
+    class DreamHolder extends android.support.v7.widget.RecyclerView.ViewHolder
+            implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
 
         private ImageView user_avatar_imageview;
         private TextView user_name_textview;

@@ -33,7 +33,7 @@ public class AView extends Fragment implements AViewInterface {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup viewGroup, Bundle bundle) {
-        rootView = inflater.inflate(R.layout.a_fragment, viewGroup, false);
+        rootView = inflater.inflate(R.layout.a_view, viewGroup, false);
 
         aPresenter = new APresenter(this);
         aPresenter.loadUserInterface();

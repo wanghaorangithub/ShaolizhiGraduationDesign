@@ -32,20 +32,20 @@ public class MainPresenter implements BottomNavigationView.OnNavigationItemSelec
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.navigation_home:
-                mainView.loadViewA();
+                mainView.openViewA();
                 return true;
             case R.id.navigation_dashboard:
-                mainView.loadViewB();
+                mainView.openViewB();
                 return true;
             case R.id.navigation_notifications:
-                mainView.loadViewC();
+                mainView.openViewC();
                 return true;
             case R.id.navigation_personal_information:
                 UserBean userBean = mainModel.getUserBeanFromServer();
                 if (!userBean.getLoginStatus())
-                    mainView.loadViewWelcome();
+                    mainView.openViewWelcome();
                 else
-                    mainView.loadViewD();
+                    mainView.openViewD();
                 return true;
         }
         return false;

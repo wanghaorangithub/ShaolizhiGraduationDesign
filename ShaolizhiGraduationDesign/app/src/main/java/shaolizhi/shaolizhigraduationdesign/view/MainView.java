@@ -11,8 +11,8 @@ import shaolizhi.shaolizhigraduationdesign.R;
 import shaolizhi.shaolizhigraduationdesign.plugin.BottomNavigationViewHelper;
 import shaolizhi.shaolizhigraduationdesign.presenter.MainPresenter;
 
-public class MainViewView extends AppCompatActivity implements MainViewInterface {
-    FragmentManager fragmentManager = null;
+public class MainView extends AppCompatActivity implements MainViewInterface {
+    FragmentManager fragmentManager;
     AView aView;
     BView bView;
     CView cView;
@@ -23,7 +23,7 @@ public class MainViewView extends AppCompatActivity implements MainViewInterface
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main_view);
         mainPresenter = new MainPresenter(this);
         mainPresenter.loadUserInterface();
     }
@@ -35,11 +35,11 @@ public class MainViewView extends AppCompatActivity implements MainViewInterface
         cView = new CView();
         dView = new DView();
         fragmentManager = getSupportFragmentManager();
-        loadViewA();
+        openViewA();
     }
 
     @Override
-    public void loadViewA() {
+    public void openViewA() {
         FragmentTransaction fragmentTransaction =
                 fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.content, aView);
@@ -47,29 +47,29 @@ public class MainViewView extends AppCompatActivity implements MainViewInterface
     }
 
     @Override
-    public void loadViewB() {
+    public void openViewB() {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.content, bView);
         fragmentTransaction.commit();
     }
 
     @Override
-    public void loadViewC() {
+    public void openViewC() {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.content, cView);
         fragmentTransaction.commit();
     }
 
     @Override
-    public void loadViewD() {
+    public void openViewD() {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.content, dView);
         fragmentTransaction.commit();
     }
 
     @Override
-    public void loadViewWelcome() {
-        Intent intent = new Intent(MainViewView.this, WelcomeView.class);
+    public void openViewWelcome() {
+        Intent intent = new Intent(MainView.this, WelcomeView.class);
         startActivity(intent);
     }
 

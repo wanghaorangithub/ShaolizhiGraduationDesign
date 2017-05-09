@@ -26,7 +26,7 @@ public class BView extends Fragment implements BViewInterface {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup viewGroup, Bundle bundle) {
-        rootView = inflater.inflate(R.layout.b_fragment, viewGroup, false);
+        rootView = inflater.inflate(R.layout.b_view, viewGroup, false);
         bPresenter = new BPresenter(this);
         bPresenter.loadUserInterface();
         return rootView;
@@ -41,7 +41,8 @@ public class BView extends Fragment implements BViewInterface {
     @Override
     public void loadRecyclerView() {
         RecyclerView recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view);
-        RecyclerViewNoScrollLayoutManager noScrollLayoutManager = new RecyclerViewNoScrollLayoutManager(getActivity());
+        RecyclerViewNoScrollLayoutManager noScrollLayoutManager =
+                new RecyclerViewNoScrollLayoutManager(getActivity());
         noScrollLayoutManager.setScrollEnabled(true);
         recyclerView.setLayoutManager(noScrollLayoutManager);
         recyclerView.setAdapter(bPresenter);

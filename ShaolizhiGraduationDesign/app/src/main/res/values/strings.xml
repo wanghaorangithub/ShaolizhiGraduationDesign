@@ -83,4 +83,6 @@
     <string name="login">登陆</string>
     <string name="register">注册</string>
     <string name="skip_login">跳过登陆</string>
+    <string name="password_tip">请输入您的密码</string>
+    <string name="name_tip">请输入您的用户名</string>
 </resources>

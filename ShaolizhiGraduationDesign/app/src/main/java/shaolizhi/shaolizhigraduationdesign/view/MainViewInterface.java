@@ -8,15 +8,15 @@ public interface MainViewInterface {
 
     void initViewABCD();
 
-    void loadViewA();
+    void openViewA();
 
-    void loadViewB();
+    void openViewB();
 
-    void loadViewC();
+    void openViewC();
 
-    void loadViewD();
+    void openViewD();
 
-    void loadViewWelcome();
+    void openViewWelcome();
 
     void loadBottomNavigationView();
 }

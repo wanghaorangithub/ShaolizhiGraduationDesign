@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import shaolizhi.shaolizhigraduationdesign.R;
 
-public class SearchView extends AppCompatActivity {
+public class LoginView extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.search_view);
+        setContentView(R.layout.activity_login_view);
     }
 }

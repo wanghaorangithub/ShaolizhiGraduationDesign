@@ -13,8 +13,7 @@
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        >
+        android:layout_weight="1">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -50,16 +49,15 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:background="@drawable/export_help"
-                    />
+                    android:background="@drawable/export_help" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="12dp"
-                    android:background="#efefef"
-                    />
+                    android:background="#efefef" />
             </LinearLayout>
         </ScrollView>
+
     </android.support.v4.widget.SwipeRefreshLayout>
 
 

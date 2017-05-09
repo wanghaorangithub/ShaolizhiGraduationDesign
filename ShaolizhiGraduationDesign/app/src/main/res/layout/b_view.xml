@@ -65,10 +65,6 @@
 
             </LinearLayout>
 
-
-
-
     </com.yalantis.phoenix.PullToRefreshView>
-
 
 </LinearLayout>
