@@ -25,6 +25,8 @@ import shaolizhi.shaolizhigraduationdesign.presenter.APresenter;
 
 public class AView extends Fragment implements AViewInterface {
 
+
+
     SwipeRefreshLayout swipeRefreshLayout;
     APresenter aPresenter;
     Context context;

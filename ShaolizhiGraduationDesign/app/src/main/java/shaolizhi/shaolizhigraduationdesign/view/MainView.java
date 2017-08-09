@@ -5,13 +5,13 @@ import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 
 import shaolizhi.shaolizhigraduationdesign.R;
 import shaolizhi.shaolizhigraduationdesign.plugin.BottomNavigationViewHelper;
 import shaolizhi.shaolizhigraduationdesign.presenter.MainPresenter;
+import shaolizhi.shaolizhigraduationdesign.widget.BaseActivity;
 
-public class MainView extends AppCompatActivity implements MainViewInterface {
+public class MainView extends BaseActivity implements MainViewInterface {
     FragmentManager fragmentManager;
     AView aView;
     BView bView;
@@ -26,6 +26,7 @@ public class MainView extends AppCompatActivity implements MainViewInterface {
         setContentView(R.layout.main_view);
         mainPresenter = new MainPresenter(this);
         mainPresenter.loadUserInterface();
+
     }
 
     @Override

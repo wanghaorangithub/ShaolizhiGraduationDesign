@@ -6,9 +6,7 @@ package shaolizhi.shaolizhigraduationdesign.view;
 
 public interface WelcomeViewInterface {
 
-    void loadButtonLogin();
-
-    void loadButtonRegister();
+    void initViews();
 
     void openViewLogin();
 
