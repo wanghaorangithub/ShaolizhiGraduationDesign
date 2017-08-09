@@ -7,7 +7,6 @@ import com.daimajia.slider.library.Tricks.ViewPagerEx;
 
 import shaolizhi.shaolizhigraduationdesign.bean.ABean;
 import shaolizhi.shaolizhigraduationdesign.model.AModel;
-import shaolizhi.shaolizhigraduationdesign.model.AModelInterface;
 import shaolizhi.shaolizhigraduationdesign.view.AViewInterface;
 
 /**
@@ -16,7 +15,7 @@ import shaolizhi.shaolizhigraduationdesign.view.AViewInterface;
 
 public class APresenter implements SwipeRefreshLayout.OnRefreshListener, BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
     private AViewInterface aView;
-    private AModelInterface aModel;
+    private AModel aModel;
 
     public APresenter(AViewInterface aView) {
         this.aView = aView;

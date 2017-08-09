@@ -11,9 +11,8 @@ import shaolizhi.shaolizhigraduationdesign.bean.BBean;
  * 由邵励治于2017/4/29创造.
  */
 
-public class BModel implements BModelInterface {
+public class BModel extends BaseModel {
 
-    @Override
     public List<BBean> getBBeanListFromServer() {
         List<BBean> list = new ArrayList<>();
         BBean bBean = new BBean();

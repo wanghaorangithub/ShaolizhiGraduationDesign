@@ -9,8 +9,8 @@ import shaolizhi.shaolizhigraduationdesign.bean.ABean;
  * 由邵励治于2017/4/28创造.
  */
 
-public class AModel implements AModelInterface {
-    @Override
+public class AModel extends BaseModel  {
+
     public ABean getABeanFromServer() {
         ABean aBean = new ABean();
         HashMap<String, Integer> hashMap = new HashMap<>();

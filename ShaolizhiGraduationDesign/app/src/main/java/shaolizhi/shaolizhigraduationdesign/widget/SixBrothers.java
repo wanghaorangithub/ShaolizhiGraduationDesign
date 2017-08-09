@@ -12,6 +12,11 @@ import shaolizhi.shaolizhigraduationdesign.R;
  */
 
 public class SixBrothers extends LinearLayout {
+
+    public SixBrothers(Context context) {
+        super(context);
+    }
+
     public SixBrothers(Context context, AttributeSet attrs) {
         super(context, attrs);
         LayoutInflater.from(context).inflate(R.layout.six_brothers, this);

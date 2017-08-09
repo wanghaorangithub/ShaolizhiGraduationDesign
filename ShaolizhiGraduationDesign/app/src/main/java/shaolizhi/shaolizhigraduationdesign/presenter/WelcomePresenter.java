@@ -12,20 +12,18 @@ import shaolizhi.shaolizhigraduationdesign.view.WelcomeViewInterface;
 public class WelcomePresenter implements View.OnClickListener {
     private WelcomeViewInterface welcomeView;
 
-
     public WelcomePresenter(WelcomeViewInterface welcomeViewInterface) {
         this.welcomeView = welcomeViewInterface;
     }
 
-    public void loadUserInterface(){
-        welcomeView.loadButtonLogin();
-        welcomeView.loadButtonRegister();
+    public void loadUserInterface() {
+        welcomeView.initViews();
     }
 
     @Override
     public void onClick(View v) {
         int tag = (Integer) v.getTag();
-        switch (tag){
+        switch (tag) {
             case WelcomeConstant.LOGIN_BUTTON:
                 welcomeView.openViewLogin();
                 break;

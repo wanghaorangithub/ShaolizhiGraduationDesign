@@ -21,7 +21,6 @@ import java.util.Map;
 import shaolizhi.shaolizhigraduationdesign.R;
 import shaolizhi.shaolizhigraduationdesign.bean.BBean;
 import shaolizhi.shaolizhigraduationdesign.model.BModel;
-import shaolizhi.shaolizhigraduationdesign.model.BModelInterface;
 import shaolizhi.shaolizhigraduationdesign.plugin.SliderLayout_AlwaysInvisibleAnimation;
 import shaolizhi.shaolizhigraduationdesign.view.BViewInterface;
 
@@ -33,7 +32,7 @@ public class BPresenter extends RecyclerView.Adapter<BPresenter.DreamHolder> imp
 
     private BViewInterface bView;
 
-    private BModelInterface bModel;
+    private BModel bModel;
 
     private List<BBean> dataForRecycler;
 

@@ -1,5 +1,6 @@
 package shaolizhi.shaolizhigraduationdesign.presenter;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.view.MenuItem;
@@ -7,7 +8,6 @@ import android.view.MenuItem;
 import shaolizhi.shaolizhigraduationdesign.R;
 import shaolizhi.shaolizhigraduationdesign.bean.UserBean;
 import shaolizhi.shaolizhigraduationdesign.model.MainModel;
-import shaolizhi.shaolizhigraduationdesign.model.MainModelInterface;
 import shaolizhi.shaolizhigraduationdesign.view.MainViewInterface;
 
 /**
@@ -16,7 +16,7 @@ import shaolizhi.shaolizhigraduationdesign.view.MainViewInterface;
 
 public class MainPresenter implements BottomNavigationView.OnNavigationItemSelectedListener {
     private MainViewInterface mainView;
-    private MainModelInterface mainModel;
+    private MainModel mainModel;
 
     public MainPresenter(MainViewInterface mainView) {
         this.mainView = mainView;
@@ -41,7 +41,7 @@ public class MainPresenter implements BottomNavigationView.OnNavigationItemSelec
                 mainView.openViewC();
                 return true;
             case R.id.navigation_personal_information:
-                UserBean userBean = mainModel.getUserBeanFromServer();
+                UserBean userBean = mainModel.getUserBeanFromCache((Context) mainView);
                 if (!userBean.getLoginStatus())
                     mainView.openViewWelcome();
                 else
